@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Renan Rocha</title>
+    <link rel="stylesheet" href="portfolioWebSite - Renan/style.css">
+    <script src="portfolioWebSite - Renan/funcao.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="portfolioWebSite - Renan/Captura_de_tela_2025-03-20_191828-removebg-preview.png" alt="Logo">
+            <span>Renan Rocha</span>
+        </div>
+        <div>
+            <a href="#section1">Home</a>
+            <a href="#section2">Sobre mim</a>
+            <a href="#section3">Meus Projetos</a>
+            <a href="#section4">Minha Experiência</a>
+        </div>
+    </div>
+
+    <div id="section1" class="section">
+        <div class="title">
+            <div id="title">
+                Olá! Meu nome é Renan e...
+                <br><div id="tituloCentral"><H1>EU SOU UM PROGRAMADOR!</H1></div>
+                <div id="subTitulo">Seja bem-vindo(a) ao meu portfólio website!</div>
+            </div>
+            <input type="button" value="Entre em contato" id="btnContato" onclick="contatar()">
+            <div class="redes">
+                <div class="insta" onclick="instagram()"><img class="insta" src="portfolioWebSite - Renan/87390-removebg-preview.png" alt=""></div>
+                <div class="linkedin" onclick="linkedin()"><img class="linkedin" src="portfolioWebSite - Renan/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835-removebg-preview.png" alt=""></div>
+            </div>
+            
+        </div>
+        <div class="imgHomeClass">
+            <img src="portfolioWebSite - Renan/Captura de tela 2025-03-20 192153.png" alt="" class="imgHome">
+        </div>
+      
+    </div>
+
+    <div id="divisor"></div>
+
+    <div id="section2" class="section">
+        <div class="sobreMim">
+            <div id="tituloSection"><h1 class="title1">Sobre<h1><h1 class="title2"> mim:</h1></div>
+            <div id="apresentacao">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 215342.png" alt="" id="imgEu">
+                <div class="textoSobreMim">
+                    Olá! Meu nome é Renan Guilherme Oliveira Rocha, tenho 17 anos e sou de Maracanaú, CE. Atualmente, estou no terceiro ano do Ensino Médio na EEEP Luiza de Teodoro Vieira, cursando Informática. Tenho grande interesse em desenvolvimento e design, sempre buscando aprimorar minhas habilidades nessas áreas.
+
+                    Além da programação, também gosto de desenhar e explorar minha criatividade por meio do design. Já fiz cursos na área de programação, o que me permitiu adquirir mais conhecimento e experiência prática no desenvolvimento de projetos.
+                    
+                    Nas horas vagas, gosto de ler, jogar videogames e continuar aprendendo sobre tecnologia e design, sempre procurando evoluir tanto na parte técnica quanto na criatividade.
+                </div>
+            </div>
+        </div>
+        <div class="hardSkills">
+            <div id="skills">
+                <div id="tituloSection"><h1 class="title1">Minhas<h1><h1 class="title2"> habilidades:</h1></div>
+                <div class="textoHabilidades">
+                    <div id="skill"> -Desenvolvimento web: </div>
+                    HTML, CSS e JS
+                    <div id="skill">-Desenvolvimento Desktop:</div>
+                    Java e Python
+                    <div id="skill">-Desenvolvimento Mobile: </div>
+                    Experiência com projetos no Android Studio usando Java  
+                    <div id="skill">-Design: </div>
+                    Figma, canva, picsart, capcut e disposto a aprender a usar corel draw
+                </div>
+            </div>
+            <img src="portfolioWebSite - Renan/Captura de tela 2025-03-23 200233.png" alt="" id="imgSobreMim">
+        </div>
+    </div>
+
+    <div id="divisor"></div>
+
+    <div id="section3" class="section">
+        <div class="meusProjetos">
+            <div id="tituloSection"><h1 class="title1">Meu<h1><h1 class="title2"> portfólio:</h1></div>
+            <div class="textoSection">
+                Apresento alguns dos trabalhos e projetos que já realizei, variam desde design, suporte, robótica e
+                desenvolvimento até outros cursos além do da escola profissionalizante! Vão desde Sites web, experiências com robótica e projetos em python até protótipagem!
+                Dentre algumas coisas, temos a foto da nossa equipe do Projeto Android Studio de 2024 além das aulas práticas que ocorreram ao longo dos 3 anos!Já fiz parte de um projeto chamado "CFE" ou simplesmente "Controle de Frequência Escolar"
+                que consistia em um app feito na IDE Android Studio com Java que tinha o objetivo de digitalizar e simplificar o sistema de chamadas vigente nas escolas, é possível ver sua aparência na galeria a baixo.
+
+            </div>
+           <div class="filtro" >
+             <label for="filter" ><h2 class="title1">Escolha a categoria:</h2></label>
+            <select id="filter" onchange="filterImages()">
+                <option value="none">Não mostrar</option>
+                <option value="all">Todas</option>
+                <option value="design">Design</option>
+                <option value="suporte">Suporte e Robótica</option>
+                <option value="desenvolvimento">Desenvolvimento</option>
+            </select>
+            
+            <div class="gallery">
+                <img src="portfolioWebSite - Renan/&.jpg" class="design">
+                <img src="portfolioWebSite - Renan/4.png"class="design">
+                <img src="portfolioWebSite - Renan/5.png"class="design">
+                <img src="portfolioWebSite - Renan/CampanhaVacinacao.png"class="design">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0066.jpg"class="design">
+                <img src="portfolioWebSite - Renan/Design sem nome.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-11-18 143233.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-02-25 210340.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-02-25 210351.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 172551.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 172944.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura_de_tela_2024-10-18_110319-removebg-preview.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 173233.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 173201.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 173111.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 173023.png"class="design">
+                <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 173007.png"class="design">
+
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0013.jpg" class="suporte">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0016.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0017.jpg"class="suporte" >
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0019.jpg"class="suporte" >
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0020.jpg"class="suporte" >
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0023.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0025.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0026.jpg"class="suporte" >
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0031.jpg"class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0034.jpg"class="suporte" >
+                  <img src="portfolioWebSite - Renan/IMG-20250328-WA0035.jpg" class="suporte">
+                  <img src="portfolioWebSite - Renan/IMG-20250328-WA0036.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0039.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0040.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0042.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0043.jpg" class="suporte">
+                 <img src="portfolioWebSite - Renan/IMG-20250328-WA0047.jpg" class="suporte">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0048.jpg" class="suporte">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0049.jpg" class="suporte">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0056.jpg" class="suporte">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0058.jpg" class="suporte">
+               
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-08-29 111221.png" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-08-29 201658.png" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-10-30 200244.png"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-10-31 200108.png"class="desenvolvimento" >
+                <img src="portfolioWebSite - Renan/Captura de tela 2024-11-30 133336.png" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/Equipe.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0003.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0004.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0005.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0006.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0007.jpg"class="desenvolvimento" >
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0008.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0009.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0010.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0050.jpg"class="desenvolvimento" >
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0054.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0055.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0059.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0062.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0067.jpg" class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0070.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/IMG-20250328-WA0071.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/MeuProtótipo (1).png"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/projetoconceitualaaaaaaaaaaaaaaaaaaaaa.jpg"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/Protótipos de jogos.png"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/imc.png"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/eclipisi1.png"class="desenvolvimento">
+                <img src="portfolioWebSite - Renan/eclipisi2.png"class="desenvolvimento">
+            </div>
+            <script>
+                const images2 = document.querySelectorAll('.desenvolvimento,.design,.suporte');
+             images2.forEach(image2 => {
+               image2.addEventListener('click', function() {
+                 this.classList.toggle('hover');
+               });
+             });
+             
+                     </script>
+           </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="divisor"></div>
+
+    <div id="section4" class="section">
+        <div class="meusProjetos">
+            <div id="tituloSection"><h1 class="title1">Experiência<h1><h1 class="title2"> profissional:</h1></div>
+            <div class="textoSection">
+                Apresento alguns dos trabalhos e projetos que já realizei, variam desde design, suporte, robótica e desenvolvimento até outros cursos além do da escola profissionalizante!
+            </div>
+        </div>
+         <main class="container">
+            <div class="certificado" ><h2>Robótica: Instituto Idear</h2> <img src="portfolioWebSite - Renan/IMG-20250329-WA0008.jpg" alt="" id="imgC"></div>
+            <div class="certificado" ><h2>Computação em Nuvem: Huawei Cloud</h2><img src="portfolioWebSite - Renan/certificadoRenanGui.png" alt="" id="imgC"></div>
+            <div class="certificado" ><h2>Programação:Instituto Idear </h2><img src="portfolioWebSite - Renan/IMG-20250329-WA0011.jpg" alt="" id="imgC"></div>
+            <div class="certificado" ><h2>Java Script: Curso em Vídeo</h2><img src="portfolioWebSite - Renan/certificadoJS.jpg" alt="" id="imgC"></div>
+            <div class="certificado" ><h2>Fábrica de Programadores: Fundação Demócrito Rocha</h2> <img src="portfolioWebSite - Renan/Captura de tela 2025-03-29 213136.png" alt="" id="imgC"></div>
+         </main>
+         <script>
+             const images = document.querySelectorAll('#imgC');
+images.forEach(image => {
+  image.addEventListener('click', function() {
+    this.classList.toggle('hover');  
+  });
+});
+         </script>
+    </div>
+    <div class="meusContatos">
+        <div class="inicioContatos">
+            <img src="portfolioWebSite - Renan/0f331bcf9769a387716f57e299fda19f-removebg-preview.png" alt="Logo" class="logo" id="logo">
+            <div id="tituloContatos"><h1 class="title1">Me contate:</h1></div>
+        </div>
+        <div class="textoContatos">
+            GitHub: RenaGui083 | Linkedin: Renan Rocha | E-mail: renanguirocha15@gmail.com
+        </div>
+    </div>
+</body>
+</html>

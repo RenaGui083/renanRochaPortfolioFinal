@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* barra navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #E6E6E6;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+}
+ a:hover{
+    font-weight: bold;
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+.navbar div{
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+/* divisor */
+
+#divisor{
+    height: 8vh;
+    width: 100%;
+    background: #E6E6E6;
+}
+
+/* section */
+
+.section {
+    height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    border-bottom: 1px solid #ddd;
+}
+
+/* section1 */
+
+
+.title{
+    height: 100vh;
+    width: 50%;
+    text-align: left;
+    color: #000000;
+}
+#title{
+    padding-top: 30vh;
+    padding-left: 15vh;
+}
+#tituloCentral{
+    font-size: 4vh;
+    color: #11212D;
+}
+#subTitulo{
+    font-size: 2.7vh;
+}
+.imgHome{
+    height: 100vh;
+    padding-top: 10vh;
+}
+#section1{
+    display: flex;
+    justify-content: space-between;
+}
+#btnContato{
+    margin-left: 15vh;
+    margin-top: 8vh;
+    border-style: none;
+    height: 46px;
+    width: 260px;
+    background-color: #11212D;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+}
+.linkedin{
+    height: 8vh;
+}
+.insta{
+    height: 5vh;
+ 
+}
+.redes{
+   padding-left: 15vh; 
+   display: flex;
+   align-items: center;
+   padding-top: 50px; 
+}
+/* Sobre mim */
+.sobreMim{
+    width: 100%;
+    height: 40vh;
+    padding: 50px;
+}
+.hardSkills{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+#imgSobreMim{
+    height: 60vh;
+    margin-left: 3vh;
+}
+#skills{
+    height: 60vh;
+    width: 50%;
+    padding-left: 6vh;
+}
+#imgEu{
+    height: 20vh;
+    border-radius: 10px;
+    margin-right: 4vh;
+    margin-left: 2vh;
+}
+#apresentacao{
+    display: flex;
+    font-size: 3vh;
+}
+#tituloSection{
+    margin: 2vh;
+    display: flex;
+    gap: 3px;
+}
+.textoSobreMim{
+    width: 85%;
+    text-align: justify;
+    color: #253745;
+}
+.title1{
+    color: #253745;
+}
+.title2{
+    color: #657887;
+}
+.textoHabilidades{
+    width: 85%;
+    text-align: left;
+    color: #253745;
+    font-size: 3vh;
+    padding-left: 2vh;
+}
+#skill{
+    color: #253745;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+/*Meus Projetos*/
+
+.meusProjetos{
+    width: 100%;
+    height: 30vh;
+    padding: 50px;
+}
+.textoSection{
+    width: 85%;
+    text-align: justify;
+    color: #253745;
+    padding-left: 2vh;
+    font-size: 3vh;
+}
+/* filtro */
+
+#section3{
+    height: 150vh;
+}
+.filtro{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+.gallery img.show {
+    display: block;
+}
+#filter{
+    text-align: center;
+    border-style: none;
+    height: 40px;
+    width: 260px;
+    background-color: #11212D;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 20px;
+    
+}
+.gallery img.hover {
+    transform: scale(5);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+/*Experiência Profissional*/
+#section4{
+    height: 140vh;
+}
+.certificado{
+    height: 40vh;
+    width: 40vh;
+    background: #263138;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    
+ 
+}
+.certificado img{
+    height: 20vh;
+    margin-top: 2vh;
+    transform: scale(1.10);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.certificado img.hover{
+    transform: scale(2.5);
+    z-index: 10;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+    grid-gap: 40px;
+}
+.container h2{
+    text-align: center;
+    color: #657887;
+}
+/*Meus Contatos*/
+
+.meusContatos{
+    height: 20vh;
+    width: 100%;
+    background: #E6E6E6;
+   
+}
+#logo{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    margin-top: -3vh;
+    margin-left: 5vh;
+}
+#tituloContatos{
+    margin-top: 3vh;
+}
+.inicioContatos{
+    display: flex;
+}
+.textoContatos{
+    width: 70%;
+    text-align: justify;
+    color: #253745;
+    padding-left: 10vh;
+    font-size: 3vh;
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+    body {
+        max-width: 800px;  /* Define a largura máxima */
+        margin: 0 auto;  /* Centraliza na tela */
+        padding: 0;  /* Adiciona um pequeno espaço nas laterais */
+    }
+    
+    .navbar {
+        position: fixed;
+        width: 100%;
+        background: #E6E6E6;
+     
+        display: inline;
+        align-items: center;
+   
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+    
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 7vh;
+    }
+    
+    .navbar img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .navbar a {
+        margin-right: 4vh;
+        margin-left: -3vh;
+        text-decoration: none;
+        color: #000000;
+        margin-top: 2px;
+        text-align: center;
+    }
+     a:hover{
+        font-weight: bold;
+        transform: scale(1.10);
+        transition: 0.3s;
+    }
+    
+    .navbar div{
+        display: flex;
+        gap: 30px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    /* home */
+#title{
+    margin-left:-10vh ;
+    width: 500px;
+}
+#tituloCentral{
+    font-size: 2vh;
+    color: #11212D;
+    width: 100%;
+    
+}
+#subTitulo{
+    font-size: 2vh;
+}
+.imgHome{
+  max-width: 700px;
+  max-height: 500px;
+}
+#section1{
+    display: inline;
+}
+#btnContato{
+    margin-left: 4vh;
+}
+.redes{
+   padding-left: 6vh; 
+
+}
+/* Sobre mim*/
+#section2{
+    height: 150vh;
+}
+.sobreMim{
+
+    display: inline;
+    padding: 50px;
+}
+.hardSkills{
+    display: inline;
+}
+#imgSobreMim{
+    max-height: 200px;
+    margin-top: -99px;
+    
+}
+#skills{
+    padding-left: 2px;
+}
+#imgEu{
+    height: 10vh;
+    border-radius: 5px;
+    margin-right: 4vh;
+    margin-left: 2vh;
+}
+#apresentacao{
+   display: inline;
+    font-size: 2vh;
+   
+}
+#tituloSection{
+    margin: 2vh;
+    display: flex;
+    gap: 3px;
+}
+.textoSobreMim{
+    padding: 20px;
+    text-align: justify;
+    color: #253745;
+    font-size: 2vh;
+}
+.title1{
+    color: #253745;
+}
+.title2{
+    color: #657887;
+}
+.textoHabilidades{
+    width: 400px;
+    text-align: left;
+    color: #253745;
+    padding-left: 2vh;
+    font-size: 2vh;
+}
+#skill{
+    color: #253745;
+    font-weight: bold;
+    margin-top: 2v;
+}
+/* Meus projetos */
+.meusProjetos{
+    margin-left: -40px;
+}
+#section3{
+    height: 460vh;
+}
+.filtro{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+.gallery img.show {
+    display: block;
+}
+
+.textoSection{
+    font-size: 2vh;
+    width: 300px;
+}
+.gallery img.hover {
+    transform: scale(3);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+/* certificados */
+.container{
+    display: inline;
+}
+.certificado{
+    margin: 25px;
+}
+#section4{
+    height: 280vh;
+}
+.certificado img{
+    height: 20vh;
+    margin-top: 2vh;
+    transform: scale(1);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.certificado img.hover{
+    transform: scale(1.8);
+    z-index: 10;
+}
+.meusContatos{
+    height: 20vh;
+    width: 100%;
+    background: #E6E6E6;
+   
+}
+#logo{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    margin-top: -3vh;
+    margin-left: -1vh;
+}
+#tituloContatos{
+    margin-top: 3vh;
+}
+.inicioContatos{
+    display: flex;
+}
+.textoContatos{
+    width: 100%;
+    text-align: justify;
+    color: #253745;
+    padding-left: 2vh;
+    font-size: 2vh;
+
+}
+}
