@@ -398,7 +398,7 @@ body {
 }
 #imgSobreMim{
     max-height: 200px;
-    margin-top: -99px;
+    margin-top: -120px;
     
 }
 #skills{
@@ -433,7 +433,7 @@ body {
     color: #657887;
 }
 .textoHabilidades{
-    width: 400px;
+    width: 350px;
     text-align: left;
     color: #253745;
     padding-left: 2vh;
@@ -449,7 +449,7 @@ body {
     margin-left: -40px;
 }
 #section3{
-    height: 460vh;
+    height: 600vh;
 }
 .filtro{
     font-family: Arial, sans-serif;
